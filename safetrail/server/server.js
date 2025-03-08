@@ -30,6 +30,8 @@ app.use("/api/reports", require("./routes/reportRoutes"));
 app.use("/api/admin", adminRoutes);
 app.use("/api/admin", reportRoutes);
 
+const tweetRoutes = require("./routes/tweets");  
+app.use("/api/tweets", tweetRoutes);
 // ✅ Users Route
 app.get("/api/users", async (req, res) => {
     try {
